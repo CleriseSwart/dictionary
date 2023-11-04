@@ -1,0 +1,111 @@
+/* src/styles.css */
+.hangman-container {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.hangman-title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.guess-word-section {
+  margin-bottom: 80px;
+}
+
+.hangman-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.hangman-picture {
+  margin-right: 40px;
+}
+
+.display-word {
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 8px;
+}
+
+/* Styling for the HangmanDrawing component */
+.hangman-drawing img {
+  width: 200px;
+}
+
+/* Styling for the Alphabet component */
+.keyboard-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.keyboard-row {
+  display: flex;
+  justify-content: center;
+}
+
+.keyboard-key,
+.special-key,
+.space-bar {
+  background-color: #fca311; /* Orange color for keys */
+  border: none;
+  border-radius: 5px;
+  margin: 5px;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Light grey drop shadow */
+}
+
+.keyboard-key:hover,
+.special-key:hover,
+.space-bar:hover {
+  background-color: #e5e5e5; /* Light grey on hover */
+  transform: scale(1.05);
+}
+
+.keyboard-key:active,
+.special-key:active,
+.space-bar:active {
+  transform: scale(0.95);
+}
+
+.special-keys {
+  margin-bottom: 20px;
+}
+
+.special-key {
+  font-size: 14px;
+}
+
+.space-bar {
+  padding: 10px 40px;
+}
+
+/* Styling for the Reset button */
+.reset-button {
+  background-color: #fca311;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  color: #fff; /* White text color */
+}
+
+.reset-button:hover {
+  background-color: #e5e5e5;
+  transform: scale(1.05);
+}
+
+.reset-button:active {
+  transform: scale(0.95);
+}
